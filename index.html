@@ -229,13 +229,13 @@
       <strong>How to read it:</strong> In the scatter plot, benchmarks in the upper-right quadrant score high on both ND and PE &mdash; these are the strongest candidates. Benchmarks that are high-ND but low-PE (upper-left) are philosophically rich but practically inaccessible (often due to missing data). The gate mechanism filters these out: you need BOTH normative depth AND data availability to pass. The sensitivity analysis tests every weight triplet from (10,10,80) to (80,10,10) in increments of 10. With 24 gate-passing benchmarks, composite weights now matter at the margin &mdash; only 1 of 18 tested triplets preserves the exact same Top 15. However, all core benchmarks remain stable.
     </div>
     <div class="row g-3">
-      <div class="col-lg-7">
+      <div class="col-lg-6">
         <div class="chart-container">
           <h3>ND vs PE Scatter (bubble size = CI)</h3>
           <div id="chart-nd-pe-scatter" class="echarts-box"></div>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <div class="chart-container">
           <h3>Sensitivity: Gate Threshold Impact</h3>
           <div id="chart-gate-sensitivity" class="echarts-box-sm"></div>
@@ -278,13 +278,13 @@
       <strong>How to read it:</strong> The bar chart shows accuracy (green) alongside discriminative power (blue) for each trial. High accuracy + low discriminative power (like T1/ETHICS at 100% accuracy, 0 discriminative) means the benchmark is too easy for frontier models &mdash; a ceiling effect. Low accuracy + high discriminative power (like T8/AMAeval at 73%, 75 discriminative) means the benchmark genuinely challenges the model and reveals meaningful performance variation. The framework difficulty pie shows whether items were rated Easy, Medium, or Hard.
     </div>
     <div class="row g-3">
-      <div class="col-lg-8">
+      <div class="col-lg-7">
         <div class="chart-container">
           <h3>Trial Accuracy &amp; Discriminative Power</h3>
           <div id="chart-trials-bar" class="echarts-box"></div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-5">
         <div class="chart-container">
           <h3>Framework Difficulty</h3>
           <div id="chart-difficulty-pie" class="echarts-box-sm"></div>
@@ -661,7 +661,7 @@
 
     <!-- Expert Analysis: Radar & Findings -->
     <div class="row g-3 mb-3">
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <div class="expert-analysis" style="border-left:3px solid #a78bfa;">
           <strong>&#x1f50d; Expert Analysis &mdash; Provider Profiles</strong><br>
           <em style="color:var(--text-muted);font-size:0.78rem;">&mdash; Cross-Cultural &amp; Science Communication perspectives</em>
@@ -673,7 +673,7 @@
           <strong>Responsible framing:</strong> From a science communication perspective: &ldquo;These profiles describe <em>current model behavior</em>, not permanent vendor characteristics. A single RLHF update could shift any model&rsquo;s position. Report as a snapshot, not a verdict.&rdquo;
         </div>
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-6">
         <div class="expert-analysis" style="border-left:3px solid #22d3ee;">
           <strong>&#x1f50d; Expert Analysis &mdash; Cross-Vendor Findings Summary</strong><br>
           <em style="color:var(--text-muted);font-size:0.78rem;">&mdash; Full interdisciplinary council consensus</em>
